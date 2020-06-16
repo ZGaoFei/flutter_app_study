@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class ManagerInheritedWidget extends InheritedWidget {
-  final String userTitle;
+  final int data;
 
-  const ManagerInheritedWidget(this.userTitle, Widget child)
+  const ManagerInheritedWidget(this.data, Widget child)
       : super(child: child);
 
   static ManagerInheritedWidget of(BuildContext context) {
@@ -12,6 +12,6 @@ class ManagerInheritedWidget extends InheritedWidget {
 
   @override
   bool updateShouldNotify(ManagerInheritedWidget oldWidget) {
-    return userTitle != oldWidget.userTitle;
+    return data != oldWidget.data;
   }
 }

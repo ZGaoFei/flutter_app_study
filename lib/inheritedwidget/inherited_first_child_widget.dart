@@ -5,18 +5,18 @@ import 'package:flutterappstudy/inheritedwidget/manager_inherited_widget.dart';
 class InheritedFirstChildWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var userTitle = ManagerInheritedWidget.of(context).userTitle;
+    var data = ManagerInheritedWidget.of(context).data;
 
-    return Scaffold(
-        appBar: AppBar(title: Text("Inherited first child widget")),
-        body: Container(
-          child: Column(
-            children: <Widget>[
-              Text(userTitle,
-                  style: TextStyle(fontSize: 16, color: Colors.red)),
-              InheritedTwoChildWidget(),
-            ],
-          ),
-        ));
+    return Container(
+      margin: EdgeInsetsDirectional.only(top: 20),
+      alignment: Alignment.center,
+      child: Column(
+        children: <Widget>[
+          Text(data.toString(),
+              style: TextStyle(fontSize: 16, color: Colors.red)),
+          InheritedTwoChildWidget(),
+        ],
+      ),
+    );
   }
 }
