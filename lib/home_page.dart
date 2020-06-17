@@ -20,7 +20,9 @@ class HomePage extends StatelessWidget {
                   context, "stateful生命周期", "stateful_widget_active"),
               createClickItem(context, "Hero", "hero_page"),
               createClickItem(
-                  context, "InheritedWidget", "inherited_widget_home")
+                  context, "InheritedWidget", "inherited_widget_home"),
+              createClickItem(
+                  context, "CallBackWidget", "call_back_widget")
             ],
           ),
         ),

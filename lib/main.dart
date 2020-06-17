@@ -3,6 +3,7 @@ import 'package:flutterappstudy/hero/hero_home.dart';
 import 'package:flutterappstudy/hero/hero_two.dart';
 import 'package:flutterappstudy/inheritedwidget/inherited_widget_home.dart';
 import 'package:flutterappstudy/state_manager/NullView.dart';
+import 'package:flutterappstudy/widget_callback/CallBackWidget.dart';
 
 import 'home_page.dart';
 import 'state_active/stateful_widget_active.dart';
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         "hero_page": (context) => new HeroHome(),
         "hero_two_page": (context) => new HeroTwo(),
         "inherited_widget_home": (context) => new InheritedWidgetHome(),
+        "call_back_widget": (context) => new CallBackWidget(),
       },
     );
   }
