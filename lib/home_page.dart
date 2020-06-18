@@ -22,7 +22,9 @@ class HomePage extends StatelessWidget {
               createClickItem(
                   context, "InheritedWidget", "inherited_widget_home"),
               createClickItem(
-                  context, "CallBackWidget", "call_back_widget")
+                  context, "CallBackWidget", "call_back_widget"),
+              createClickItem(
+                  context, "Future", "future_test")
             ],
           ),
         ),

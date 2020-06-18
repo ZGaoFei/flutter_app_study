@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterappstudy/future/future_test.dart';
 import 'package:flutterappstudy/hero/hero_home.dart';
 import 'package:flutterappstudy/hero/hero_two.dart';
 import 'package:flutterappstudy/inheritedwidget/inherited_widget_home.dart';
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         "hero_two_page": (context) => new HeroTwo(),
         "inherited_widget_home": (context) => new InheritedWidgetHome(),
         "call_back_widget": (context) => new CallBackWidget(),
+        "future_test": (context) => new FutureTest(),
       },
     );
   }
