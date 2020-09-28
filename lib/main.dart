@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterappstudy/first_app/first_app_main.dart';
+import 'package:flutterappstudy/future/future_test.dart';
 import 'package:flutterappstudy/hero/hero_home.dart';
 import 'package:flutterappstudy/hero/hero_two.dart';
 import 'package:flutterappstudy/inheritedwidget/inherited_widget_home.dart';
@@ -41,6 +42,7 @@ class MyApp extends StatelessWidget {
         "call_back_widget": (context) => new CallBackWidget(),
         "first_app": (context) => new FirstAppMain(),
         "json_parse": (context) => new JsonParseMain(),
+        "future_test": (context) => new FutureTest(),
       },
     );
   }
