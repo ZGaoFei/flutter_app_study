@@ -24,7 +24,8 @@ class HomePage extends StatelessWidget {
               createClickItem(context, "CallBackWidget", "call_back_widget"),
               createClickItem(context, "FirstApp", "first_app"),
               createClickItem(context, "JsonParse", "json_parse"),
-              createClickItem(context, "Future", "future_test")
+              createClickItem(context, "Future", "future_test"),
+              createClickItem(context, "TextBreak", "text_break"),
             ],
           ),
         ),

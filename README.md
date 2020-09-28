@@ -12,4 +12,22 @@ A study Flutter application.
 对应包名：hero
 
 - Flutter Inherited Widget
-对应包名：inhertedwidget
+  对应包名：inhertedwidget
+
+- Flutter  widget回调
+
+  对应包名：widget_callback
+
+- Flutter first app简单的例子
+
+- Flutter future
+
+  对应包名：future
+
+- Flutter JSON解析
+
+  对应包名：json_parse
+
+- Flutter Text换行
+
+  对应包名：text_break

@@ -6,6 +6,7 @@ import 'package:flutterappstudy/hero/hero_two.dart';
 import 'package:flutterappstudy/inheritedwidget/inherited_widget_home.dart';
 import 'package:flutterappstudy/json_parse/json_parse_main.dart';
 import 'package:flutterappstudy/state_manager/NullView.dart';
+import 'package:flutterappstudy/text_break/text_break_main.dart';
 import 'package:flutterappstudy/widget_callback/CallBackWidget.dart';
 
 import 'first_app/first_app_save.dart';
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
         "first_app": (context) => new FirstAppMain(),
         "json_parse": (context) => new JsonParseMain(),
         "future_test": (context) => new FutureTest(),
+        "text_break": (context) => new TextBreakMain(),
       },
     );
   }
