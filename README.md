@@ -1,22 +1,15 @@
 # flutterappstudy
 
-A new Flutter application.
+A study Flutter application.
 
-## Getting Started
+- Flutter 状态管理和空布局显示
+对应包名：state_manager 
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-- Flutter 状态管理
-- Flutter 空布局
 - Flutter 生命周期
+对应包名：state_active
+
 - Flutter Hero
+对应包名：hero
+
 - Flutter Inherited Widget
+对应包名：inhertedwidget

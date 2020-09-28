@@ -58,12 +58,12 @@ class MyState extends State {
             RaisedButton(
                 child: Text("open Stateless widget page"),
                 onPressed: () {
-                  Navigator.pushNamed(context, "statelessWidgetActive");
+                  Navigator.pushNamed(context, "stateless_widget_active");
                 }),
             RaisedButton(
                 child: Text("open Stateful widget page"),
                 onPressed: () {
-                  Navigator.pushNamed(context, "statefulWidgetActive");
+                  Navigator.pushNamed(context, "stateful_widget_active");
                 }),
             RaisedButton(
                 child: Text("back stateful widget"),

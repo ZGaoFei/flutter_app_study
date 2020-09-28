@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutterappstudy/first_app/first_app_main.dart';
 import 'package:flutterappstudy/hero/hero_home.dart';
 import 'package:flutterappstudy/hero/hero_two.dart';
 import 'package:flutterappstudy/inheritedwidget/inherited_widget_home.dart';
+import 'package:flutterappstudy/json_parse/json_parse_main.dart';
 import 'package:flutterappstudy/state_manager/NullView.dart';
 import 'package:flutterappstudy/widget_callback/CallBackWidget.dart';
 
+import 'first_app/first_app_save.dart';
 import 'home_page.dart';
 import 'state_active/stateful_widget_active.dart';
 import 'state_active/stateless_widget_active.dart';
@@ -36,6 +39,8 @@ class MyApp extends StatelessWidget {
         "hero_two_page": (context) => new HeroTwo(),
         "inherited_widget_home": (context) => new InheritedWidgetHome(),
         "call_back_widget": (context) => new CallBackWidget(),
+        "first_app": (context) => new FirstAppMain(),
+        "json_parse": (context) => new JsonParseMain(),
       },
     );
   }
