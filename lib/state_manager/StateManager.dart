@@ -26,6 +26,11 @@ class StateManager extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(context).pushNamed("tab_box_c");
                 }),
+            RaisedButton(
+                child: Text("state 不设置参数测试"),
+                onPressed: () {
+                  Navigator.of(context).pushNamed("state_test");
+                }),
           ],
         ),
       ),
