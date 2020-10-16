@@ -24,6 +24,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   english_words: ^3.1.0
+#  flutter_staggered_grid_view: ^0.3.0
+#  waterfall_flow: any
 
 dev_dependencies:
   flutter_test:
@@ -71,3 +73,7 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+
+  assets:
+    - assets/loading.jpg

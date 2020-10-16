@@ -7,15 +7,18 @@ import 'package:flutterappstudy/hero/hero_two.dart';
 import 'package:flutterappstudy/inheritedwidget/inherited_widget_home.dart';
 import 'package:flutterappstudy/json_parse/json_parse_main.dart';
 import 'package:flutterappstudy/list_view/infinite_grid_view.dart';
+import 'package:flutterappstudy/staggered/staggered_grid_view.dart';
 import 'package:flutterappstudy/state_manager/NullView.dart';
 import 'package:flutterappstudy/state_manager/state_test.dart';
 import 'package:flutterappstudy/text_break/text_break_main.dart';
+import 'package:flutterappstudy/water_fall_flow/WaterFallFlowTest.dart';
 import 'package:flutterappstudy/widget_callback/CallBackWidget.dart';
 
 import 'first_app/first_app_save.dart';
 import 'home_page.dart';
 import 'list_view/infinite_list_view.dart';
 import 'list_view/scroll_notification_test_route.dart';
+import 'staggered/main.dart';
 import 'state_active/stateful_widget_active.dart';
 import 'state_active/stateless_widget_active.dart';
 import 'state_manager/StateManager.dart';
@@ -55,6 +58,9 @@ class MyApp extends StatelessWidget {
         "infinite_grid_view": (context) => new InfiniteGridView(),
         "scroll_notification_test_route": (context) => new ScrollNotificationTestRoute(),
         "builder_test": (context) => new BuilderTest(),
+        "staggered_grid_view": (context) => new StaggeredGridViewTest(),
+        "staggered_main": (context) => new StaggeredMain(),
+        "water_fall_flow": (context) => new WaterFallFlowTest(),
       },
     );
   }
