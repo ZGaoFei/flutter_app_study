@@ -33,6 +33,8 @@ class HomePage extends StatelessWidget {
               createClickItem(context, "StaggeredGridView", "staggered_grid_view"),
               createClickItem(context, "StaggeredMain", "staggered_main"),
               createClickItem(context, "WaterFallFlow", "water_fall_flow"),
+              createClickItem(context, "NumRefactor", "num_refactor"),
+              createClickItem(context, "NestScrollView", "nest_scroll_view"),
             ],
           ),
         ),

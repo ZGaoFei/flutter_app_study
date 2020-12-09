@@ -7,6 +7,8 @@ import 'package:flutterappstudy/hero/hero_two.dart';
 import 'package:flutterappstudy/inheritedwidget/inherited_widget_home.dart';
 import 'package:flutterappstudy/json_parse/json_parse_main.dart';
 import 'package:flutterappstudy/list_view/infinite_grid_view.dart';
+import 'package:flutterappstudy/num_refactor/num_refactor_test.dart';
+import 'package:flutterappstudy/page_view/nest_scroll_view.dart';
 import 'package:flutterappstudy/staggered/staggered_grid_view.dart';
 import 'package:flutterappstudy/state_manager/NullView.dart';
 import 'package:flutterappstudy/state_manager/state_test.dart';
@@ -61,6 +63,8 @@ class MyApp extends StatelessWidget {
         "staggered_grid_view": (context) => new StaggeredGridViewTest(),
         "staggered_main": (context) => new StaggeredMain(),
         "water_fall_flow": (context) => new WaterFallFlowTest(),
+        "num_refactor": (context) => new NumRefactor(),
+        "nest_scroll_view": (context) => new NestScrollViewTest(),
       },
     );
   }
