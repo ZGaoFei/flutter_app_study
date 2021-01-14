@@ -9,9 +9,11 @@ import 'package:flutterappstudy/json_parse/json_parse_main.dart';
 import 'package:flutterappstudy/list_view/infinite_grid_view.dart';
 import 'package:flutterappstudy/num_refactor/num_refactor_test.dart';
 import 'package:flutterappstudy/page_view/nest_scroll_view.dart';
+import 'package:flutterappstudy/scroll_to_control/scroll_to_list_view.dart';
 import 'package:flutterappstudy/staggered/staggered_grid_view.dart';
 import 'package:flutterappstudy/state_manager/NullView.dart';
 import 'package:flutterappstudy/state_manager/state_test.dart';
+import 'package:flutterappstudy/tab_bar/tab_bar_test.dart';
 import 'package:flutterappstudy/text_break/text_break_main.dart';
 import 'package:flutterappstudy/water_fall_flow/WaterFallFlowTest.dart';
 import 'package:flutterappstudy/widget_callback/CallBackWidget.dart';
@@ -65,6 +67,8 @@ class MyApp extends StatelessWidget {
         "water_fall_flow": (context) => new WaterFallFlowTest(),
         "num_refactor": (context) => new NumRefactor(),
         "nest_scroll_view": (context) => new NestScrollViewTest(),
+        "scroll_to_listView": (context) => new ScrollToListView(),
+        "tab_bar": (context) => new TabBarTest(),
       },
     );
   }

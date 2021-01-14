@@ -9,7 +9,8 @@ class FirstAppMain extends StatelessWidget {
     return MaterialApp(
       title: "First App",
       theme: ThemeData(
-        primaryColor: Colors.white
+        primaryColor: Colors.white,
+        platform: TargetPlatform.iOS,
       ),
       home: FirstAppHome(),
       routes: {

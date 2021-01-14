@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
               createClickItem(
                   context, "InheritedWidget", "inherited_widget_home"),
               createClickItem(context, "CallBackWidget", "call_back_widget"),
-              createClickItem(context, "FirstApp", "first_app"),
+              createClickItem(context, "FirstApp(路由传值)", "first_app"),
               createClickItem(context, "JsonParse", "json_parse"),
               createClickItem(context, "Future", "future_test"),
               createClickItem(context, "TextBreak", "text_break"),
@@ -35,6 +35,8 @@ class HomePage extends StatelessWidget {
               createClickItem(context, "WaterFallFlow", "water_fall_flow"),
               createClickItem(context, "NumRefactor", "num_refactor"),
               createClickItem(context, "NestScrollView", "nest_scroll_view"),
+              createClickItem(context, "ScrollToListView", "scroll_to_listView"),
+              createClickItem(context, "TabBar", "tab_bar"),
             ],
           ),
         ),

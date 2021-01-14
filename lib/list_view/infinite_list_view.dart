@@ -9,6 +9,7 @@ class InfiniteListView extends StatefulWidget {
 class _InfiniteListViewState extends State<InfiniteListView> {
   static const loadingTag = "##loading##"; //表尾标记
   var _words = <String>[loadingTag];
+  ScrollController controller = ScrollController();
 
   @override
   void initState() {
@@ -20,7 +21,11 @@ class _InfiniteListViewState extends State<InfiniteListView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("ListView列表"),),
+      floatingActionButton: FloatingActionButton(onPressed: () {
+        controller.jumpTo(10);
+      }),
       body: ListView.separated(
+        controller: controller,
         itemCount: _words.length,
         itemBuilder: (context, index) {
           //如果到了表尾
