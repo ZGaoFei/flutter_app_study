@@ -7,39 +7,92 @@ class TextBreakMain extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-          title: Text(
-        "text换行问题",
-        style: TextStyle(color: Colors.red, fontSize: 16),
-      )),
-      body: InkWell(
-        onTap: () {
-          print("onTap");
-        },
-        onLongPress: () {
-          print("onLongPress");
-        },
-        child: Container(
-          padding: EdgeInsets.all(20),
-          child: Row(
-            children: <Widget>[
-              Image.network(
-                "https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1830914723,3154965800&fm=26&gp=0.jpg",
-                width: 150,
-                height: 100,
+        appBar: AppBar(
+            title: Text(
+          "text换行问题",
+          style: TextStyle(color: Colors.red, fontSize: 16),
+        )),
+        body: Column(
+          children: <Widget>[_buildOne(), _buildTwo(), _buildThree()],
+        ));
+  }
+
+  Widget _buildOne() {
+    return InkWell(
+      onTap: () {
+        print("onTap");
+      },
+      onLongPress: () {
+        print("onLongPress");
+      },
+      child: Container(
+        padding: EdgeInsets.all(20),
+        child: Row(
+          children: <Widget>[
+            Image.network(
+              "https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1830914723,3154965800&fm=26&gp=0.jpg",
+              width: 150,
+              height: 100,
+            ),
+            Expanded(
+              child: Text(
+                title,
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(color: Colors.red, fontSize: 16),
               ),
-              Expanded(
-                child: Text(
-                  title,
-                  maxLines: 3,
-                  overflow: TextOverflow.ellipsis,
-                  style: TextStyle(color: Colors.red, fontSize: 16),
-                ),
-              )
-            ],
-          ),
+            )
+          ],
         ),
       ),
+    );
+  }
+
+  Widget _buildTwo() {
+    return Row(
+      children: <Widget>[
+        Image.network(
+          "https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1830914723,3154965800&fm=26&gp=0.jpg",
+          width: 150,
+          height: 100,
+        ),
+        Expanded(flex: 1, child: _buildText()),
+        _buildContainer()
+      ],
+    );
+  }
+
+  Widget _buildThree() {
+    return Row(
+      children: <Widget>[
+        Image.network(
+          "https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1830914723,3154965800&fm=26&gp=0.jpg",
+          width: 150,
+          height: 100,
+        ),
+        ConstrainedBox(
+          constraints: BoxConstraints(maxWidth: 100),
+          child: _buildText(),
+        ),
+        _buildContainer()
+      ],
+    );
+  }
+
+  Widget _buildText() {
+    return Text(
+      "5哈哈",
+      maxLines: 1,
+      overflow: TextOverflow.ellipsis,
+      style: TextStyle(color: Colors.red, fontSize: 16),
+    );
+  }
+
+  Widget _buildContainer() {
+    return Container(
+      width: 80,
+      height: 40,
+      color: Colors.redAccent,
     );
   }
 }

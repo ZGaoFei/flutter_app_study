@@ -37,6 +37,7 @@ class HomePage extends StatelessWidget {
               createClickItem(context, "NestScrollView", "nest_scroll_view"),
               createClickItem(context, "ScrollToListView", "scroll_to_listView"),
               createClickItem(context, "TabBar", "tab_bar"),
+              createClickItem(context, "UpdateListViewTest", "update_list_view"),
             ],
           ),
         ),

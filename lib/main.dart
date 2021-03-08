@@ -7,6 +7,7 @@ import 'package:flutterappstudy/hero/hero_two.dart';
 import 'package:flutterappstudy/inheritedwidget/inherited_widget_home.dart';
 import 'package:flutterappstudy/json_parse/json_parse_main.dart';
 import 'package:flutterappstudy/list_view/infinite_grid_view.dart';
+import 'package:flutterappstudy/list_view_update/update_list_view.dart';
 import 'package:flutterappstudy/num_refactor/num_refactor_test.dart';
 import 'package:flutterappstudy/page_view/nest_scroll_view.dart';
 import 'package:flutterappstudy/scroll_to_control/scroll_to_list_view.dart';
@@ -69,6 +70,7 @@ class MyApp extends StatelessWidget {
         "nest_scroll_view": (context) => new NestScrollViewTest(),
         "scroll_to_listView": (context) => new ScrollToListView(),
         "tab_bar": (context) => new TabBarTest(),
+        "update_list_view": (context) => new UpdateListViewTest(),
       },
     );
   }
